@@ -1,7 +1,20 @@
 import { FaTachometerAlt } from "react-icons/fa";
 import { FaLaughWink } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
-import {DropdownItem, DropdownMenu} from "react-bootstrap";
+// import {Dropdown, DropdownItem, DropdownMenu} from "react-bootstrap";
+// import {IoSettingsSharp} from "react-icons/io5";
+import React from "react";
+// import {Button} from "@restart/ui";
+// import {AiFillTool} from "react-icons/ai";
+// import {FaChartArea, FaFolder, FaTable} from "react-icons/fa6";
+
+import {Dropdown, DropdownMenu, DropdownItem, Button, DropdownTrigger} from "@nextui-org/react";
+import { IoSettingsSharp } from "react-icons/io5";
+import { AiFillTool } from "react-icons/ai";
+import { FaFolder } from "react-icons/fa";
+import { FaChartArea } from "react-icons/fa";
+import { FaTable } from "react-icons/fa6";
+
 export default function Page() {
     return (
 
@@ -21,27 +34,101 @@ export default function Page() {
 
                     <h1 className={"opacity-50 mb-5"}>INTERFACE</h1>
 
-                    {/*Drop Down*/}
-
-                    <button className="flex space-x-4 "> jj <IoIosArrowForward />
-                        <DropdownMenu title="Dropdown">
-                            <DropdownItem href="#">Item 1</DropdownItem>
-                            <DropdownItem href="#">Item 2</DropdownItem>
-                            <DropdownItem href="#">Item 3</DropdownItem>
+                    {/*{/Dropdown Menu 1/}*/}
+                    <div className={"flex mt-4"}>
+                        <IoSettingsSharp className={"mr-2 mt-0.5"}/> <Dropdown>
+                        <Button>
+                            Components
+                        </Button>
+                        <DropdownMenu>
+                            <DropdownItem>New file</DropdownItem>
+                            <DropdownItem>Copy link</DropdownItem>
+                            <DropdownItem>Edit file</DropdownItem>
+                            <DropdownItem className="text-danger" color="danger">
+                                Delete file
+                            </DropdownItem>
                         </DropdownMenu>
+                    </Dropdown>
+                    </div>
 
-                    </button>
+                    {/*{/Dropdown Menu 2/}*/}
+                    <div className={"flex mt-8"}>
+                        <AiFillTool className={"mr-2 mt-0.5"}/> <Dropdown>
+                        <Button>
+                            Utilities
+                        </Button>
+                        <DropdownMenu>
+                            <DropdownItem>New file</DropdownItem>
+                            <DropdownItem>Copy link</DropdownItem>
+                            <DropdownItem>Edit file</DropdownItem>
+                            <DropdownItem className="text-danger" color="danger">
+                                Delete file
+                            </DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                    </div>
+
+                    <hr className={"opacity-50 mt-6 mb-2"}/>
 
 
-                    <div> <button>gdg</button></div>
+                    <div >
+                        <h1 className={"text-[12px] opacity-50"}>ADDONS</h1>
+                    </div>
 
-                    <hr className={"opacity-50 mb-2 mt-2"}/>
+
+                    <div className={"flex mt-4"}>
+                        <FaFolder className={"mr-2 mt-0.5"}/> <Dropdown>
+                        <Button>
+                            Pages
+                        </Button>
+                        <DropdownMenu>
+                            <DropdownItem>New file</DropdownItem>
+                            <DropdownItem>Copy link</DropdownItem>
+                            <DropdownItem>Edit file</DropdownItem>
+                            <DropdownItem className="text-danger" color="danger">
+                                Delete file
+                            </DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                    </div>
+
+
+                    <div className={"flex mt-8"}>
+                        <FaChartArea className={"mr-2 mt-0.5"}/>
+                        <Button>
+                            Charts
+                        </Button>
+
+                    </div>
+
+
+                    <div className={"flex mt-8"}>
+                        <FaTable className={"mr-2 mt-0.5"}/>
+                        <Button>
+                            Tables
+                        </Button>
+
+                    </div>
+
+
+            <hr className={"opacity-50 mb-2 mt-2"}/>
+
+
                 </div>
 
 
             </div>
 
-            <div className={"flex w-10/12 bg-white"}>
+            <div className={"flex flex-row w-10/12 bg-white "}>
+
+
+
+                <div className="flex flex-row w-screen gap-5 p-6">
+                    <div className="w-full h-20 p-4 bg-blue-300">1</div>
+                    <div className="w-full h-20 p-4 bg-green-300">2</div>
+                    <div className="w-full h-20 p-4 bg-yellow-300">3</div>
+                    <div className="w-full h-20 p-4 bg-red-600">4</div>
+                </div>
 
             </div>
 

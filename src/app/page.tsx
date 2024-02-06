@@ -1,9 +1,8 @@
 import Image from "next/image";
+import Page from "@/app/dashboard/Page";
 
 export default function Home() {
   return (
-    <>
-    <h1>heloowwwww</h1>
-    </>
+    <Page/>
   );
 }

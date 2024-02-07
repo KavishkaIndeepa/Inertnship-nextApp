@@ -18,6 +18,10 @@ import {FaMessage} from "react-icons/fa6";
 import {CgProfile} from "react-icons/cg";
 import {FaDownload} from "react-icons/fa";
 import {IoIosArrowDropleftCircle} from "react-icons/io";
+import { BsThreeDotsVertical } from "react-icons/bs";
+
+import image from "../img/undraw_posting_photo.svg"
+
 
 import {
     Card,
@@ -377,7 +381,13 @@ export default function Page() {
                 <div className={"flex flex-row w-full"}>
 
                     {/*Inline*/}
-                    <div className={"flex flex-col w-8/12 bg-gray-600"}>
+                    <div className={"flex flex-col w-7/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+
+                        <div className={"flex flex-row w-full"}>
+                            <h1 className={"text-[#4e73df] w-11/12 font-semibold p-4"}>Earnings Overview</h1>
+                            <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}><button><BsThreeDotsVertical /></button></div>
+                        </div>
+                        <hr className={"opacity-70"}/>
 
                         {/*<Card>*/}
                         {/*    <CardHeader*/}
@@ -411,7 +421,14 @@ export default function Page() {
                     </div>
 
                     {/*pie*/}
-                    <div className={"flex flex-col w-4/12 bg-blue-600"}>
+                    <div className={"flex flex-col w-5/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+
+                        <div className={"flex flex-row w-full"}>
+                            <h1 className={"text-[#4e73df] w-11/12 font-semibold p-4"}>Revenue Sources</h1>
+                            <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}><button><BsThreeDotsVertical /></button></div>
+                        </div>
+
+                        <hr className={"opacity-70"}/>
 
                         {/*<Card>*/}
                         {/*    <CardHeader*/}
@@ -449,8 +466,12 @@ export default function Page() {
 
                 {/*    card*/}
 
+
+
                 <div className={"flex flex-row w-full p-4"}>
 
+
+                    {/*projects*/}
                     <div className={"flex flex-col w-6/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
 
                         <h1 className={"text-[#4e73df] font-semibold p-4"}>Projects</h1>
@@ -536,25 +557,26 @@ export default function Page() {
                             </div>
                         </div>
 
-
-
-
                     </div>
 
-                    <div className={"flex flex-col w-6/12 h-auto bg-blue-600 m-2"}>
-                        <h1>aaaaaaaaaa</h1>
-                        <h1>aaaaaaaaaa</h1>
-                        <h1>aaaaaaaaaa</h1>
-                        <h1>aaaaaaaaaa</h1>
-                        <h1>aaaaaaaaaa</h1>
-                        <h1>aaaaaaaaaa</h1>
-                        <h1>aaaaaaaaaa</h1>
-                        <h1>aaaaaaaaaa</h1>
+
+                    {/* Illustrations   */}
+
+                    <div className={"flex flex-col w-6/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+
+                        <h1 className={"text-[#4e73df] font-semibold p-4"}>Illustrations</h1>
+                        <hr className={"opacity-70"}/>
+
+                        <div className={"flex flex-row w-full"}><img src={image} alt="Illustration"/></div>
 
 
                     </div>
 
                 </div>
+
+
+
+
 
             </div>
             {/*    middle end*/}

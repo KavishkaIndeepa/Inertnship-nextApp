@@ -11,6 +11,12 @@ import { FaCalendar } from "react-icons/fa";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { FaClipboardList } from "react-icons/fa";
 import { TiMessages } from "react-icons/ti";
+import {Form} from "react-bootstrap";
+import { FaSearch } from "react-icons/fa";
+import { IoIosNotifications } from "react-icons/io";
+import { FaMessage } from "react-icons/fa6";
+import { CgProfile } from "react-icons/cg";
+
 export default function Page() {
     return (
 
@@ -125,7 +131,25 @@ export default function Page() {
 
                 {/*search*/}
 
-                <div className={"flex flex-row bg-black w-full h-24"}><h2>Search</h2></div>
+                <div className={"flex flex-row bg-gray-100 shadow-2xl border-e-gray-300 w-full h-24"}>
+
+                   <div className={"flex flex-col w-8/12"}>
+                       <Form className="d-flex flex-col p-2 items-center justify-center">
+                           <Form.Control
+                               type="search"
+                               placeholder="Search for.."
+                               className="me-2"
+                               aria-label="Search"
+                           />
+                           <Button className="outline-success bg-blue-600 text-2xl p-2" ><FaSearch /></Button>
+                       </Form>
+                   </div>
+
+                    <div className={"flex flex-col w-1/12 text-gray-600 text-2xl justify-center opacity-50"} ><IoIosNotifications /></div>
+                    <div className={"flex flex-col w-1/12 text-gray-600 text-2xl justify-center opacity-50"} ><FaMessage /></div>
+                    <div className={"flex flex-row w-2/12 text-gray-600 text-2xl items-center gap-2 opacity-50"} ><p className={"text-[12px]"}>Douglas McGee</p><CgProfile /></div>
+
+                </div>
 
 
                 {/*Boxes*/}

@@ -18,7 +18,7 @@ import {FaMessage} from "react-icons/fa6";
 import {CgProfile} from "react-icons/cg";
 import {FaDownload} from "react-icons/fa";
 import {IoIosArrowDropleftCircle} from "react-icons/io";
-import { BsThreeDotsVertical } from "react-icons/bs";
+import {BsThreeDotsVertical} from "react-icons/bs";
 
 import image from "../img/undraw_posting_photo.svg"
 
@@ -31,6 +31,7 @@ import {
 } from "@material-tailwind/react";
 import Chart from "react-apexcharts";
 import {Square3Stack3DIcon} from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 //inline
 const chartConfig = {
@@ -313,7 +314,8 @@ export default function Page() {
 
                 <div className="flex flex-nowrap w-full gap-5 p-6 justify-center">
 
-                    <div className="flex  w-full h-28 p-4 border-l-8 border-[#4e73df] rounded-lg shadow-2xl bg-white border-e-gray-300">
+                    <div
+                        className="flex  w-full h-28 p-4 border-l-8 border-[#4e73df] rounded-lg shadow-2xl bg-white border-e-gray-300">
                         <div className={"flex flex-wrap w-10/12 "}>
                             <p className={"text-[#4e73df] text-[14px] "}>EARNINGS (MONTHLY)</p>
                             <p className={"text-gray-600 font-bold"}>$40,000</p>
@@ -347,7 +349,8 @@ export default function Page() {
                                 <div className="w-6/12">
                                     <div className="rounded-xl shadow-sm overflow-hidden p-1 bg-gray-100 mr-2">
                                         <div className="relative h-1 flex items-center justify-center">
-                                            <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[50%] bg-[#36b9cc]"></div>
+                                            <div
+                                                className="absolute top-0 bottom-0 left-0 rounded-lg w-[50%] bg-[#36b9cc]"></div>
                                             <div className="relative text-blue-900 font-medium text-sm"></div>
                                         </div>
                                     </div>
@@ -381,11 +384,14 @@ export default function Page() {
                 <div className={"flex flex-row w-full"}>
 
                     {/*Inline*/}
-                    <div className={"flex flex-col w-7/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+                    <div
+                        className={"flex flex-col w-7/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
 
                         <div className={"flex flex-row w-full"}>
                             <h1 className={"text-[#4e73df] w-11/12 font-semibold p-4"}>Earnings Overview</h1>
-                            <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}><button><BsThreeDotsVertical /></button></div>
+                            <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}>
+                                <button><BsThreeDotsVertical/></button>
+                            </div>
                         </div>
                         <hr className={"opacity-70"}/>
 
@@ -421,11 +427,14 @@ export default function Page() {
                     </div>
 
                     {/*pie*/}
-                    <div className={"flex flex-col w-5/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+                    <div
+                        className={"flex flex-col w-5/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
 
                         <div className={"flex flex-row w-full"}>
                             <h1 className={"text-[#4e73df] w-11/12 font-semibold p-4"}>Revenue Sources</h1>
-                            <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}><button><BsThreeDotsVertical /></button></div>
+                            <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}>
+                                <button><BsThreeDotsVertical/></button>
+                            </div>
                         </div>
 
                         <hr className={"opacity-70"}/>
@@ -467,12 +476,12 @@ export default function Page() {
                 {/*    card*/}
 
 
-
                 <div className={"flex flex-row w-full p-4"}>
 
 
                     {/*projects*/}
-                    <div className={"flex flex-col w-6/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+                    <div
+                        className={"flex flex-col w-6/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
 
                         <h1 className={"text-[#4e73df] font-semibold p-4"}>Projects</h1>
                         <hr className={"opacity-70"}/>
@@ -480,77 +489,92 @@ export default function Page() {
                         {/*1*/}
                         <div className={"flex flex-col w-full p-2"}>
                             <div className={"flex flex-row w-full"}>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Server Migration</div>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>20%</div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Server Migration
+                                </div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>20%
+                                </div>
                             </div>
                             <div className={"flex flex-col w-full mt-2"}>
                                 <div className="rounded-xl shadow-sm overflow-hidden p-1">
                                     <div className="relative h-6 flex items-center justify-center">
-                                        <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[20%] bg-[#e74a3b]"></div>
+                                        <div
+                                            className="absolute top-0 bottom-0 left-0 rounded-lg w-[20%] bg-[#e74a3b]"></div>
                                         <div className="relative text-blue-900 font-medium text-sm"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                    {/*    2*/}
+                        {/*    2*/}
                         <div className={"flex flex-col w-full p-2"}>
                             <div className={"flex flex-row w-full"}>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Sales Tracking</div>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>40%</div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Sales Tracking
+                                </div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>40%
+                                </div>
                             </div>
                             <div className={"flex flex-col w-full mt-2"}>
                                 <div className="rounded-xl shadow-sm overflow-hidden p-1">
                                     <div className="relative h-6 flex items-center justify-center">
-                                        <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[40%] bg-[#f6c23e]"></div>
+                                        <div
+                                            className="absolute top-0 bottom-0 left-0 rounded-lg w-[40%] bg-[#f6c23e]"></div>
                                         <div className="relative text-blue-900 font-medium text-sm"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                    {/*    3*/}
+                        {/*    3*/}
                         <div className={"flex flex-col w-full p-2"}>
                             <div className={"flex flex-row w-full"}>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Customer Database</div>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>60%</div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Customer Database
+                                </div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>60%
+                                </div>
                             </div>
                             <div className={"flex flex-col w-full mt-2"}>
                                 <div className="rounded-xl shadow-sm overflow-hidden p-1">
                                     <div className="relative h-6 flex items-center justify-center">
-                                        <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[60%] bg-[#4e73df]"></div>
+                                        <div
+                                            className="absolute top-0 bottom-0 left-0 rounded-lg w-[60%] bg-[#4e73df]"></div>
                                         <div className="relative text-blue-900 font-medium text-sm"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                    {/*    4*/}
+                        {/*    4*/}
                         <div className={"flex flex-col w-full p-2"}>
                             <div className={"flex flex-row w-full"}>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Payout Details</div>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>80%</div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Payout Details
+                                </div>
+                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>80%
+                                </div>
                             </div>
                             <div className={"flex flex-col w-full mt-2"}>
                                 <div className="rounded-xl shadow-sm overflow-hidden p-1">
                                     <div className="relative h-6 flex items-center justify-center">
-                                        <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[80%] bg-[#36b9cc]"></div>
+                                        <div
+                                            className="absolute top-0 bottom-0 left-0 rounded-lg w-[80%] bg-[#36b9cc]"></div>
                                         <div className="relative text-blue-900 font-medium text-sm"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                    {/*    5*/}
+                        {/*    5*/}
                         <div className={"flex flex-col w-full p-2"}>
                             <div className={"flex flex-row w-full"}>
                                 <div className={"flex flex-col w-6/12 text-[#858796] justify-start"}>Account Setup</div>
-                                <div className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>Complete!</div>
+                                <div
+                                    className={"flex flex-col w-6/12 text-[#858796] justify-items-end items-end"}>Complete!
+                                </div>
                             </div>
                             <div className={"flex flex-col w-full mt-2"}>
                                 <div className="rounded-xl shadow-sm overflow-hidden p-1">
                                     <div className="relative h-6 flex items-center justify-center">
-                                        <div className="absolute top-0 bottom-0 left-0 rounded-lg w-[100%] bg-[#1cc88a]"></div>
+                                        <div
+                                            className="absolute top-0 bottom-0 left-0 rounded-lg w-[100%] bg-[#1cc88a]"></div>
                                         <div className="relative text-blue-900 font-medium text-sm"></div>
                                     </div>
                                 </div>
@@ -562,25 +586,111 @@ export default function Page() {
 
                     {/* Illustrations   */}
 
-                    <div className={"flex flex-col w-6/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+                    <div
+                        className={"flex flex-col w-6/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
 
                         <h1 className={"text-[#4e73df] font-semibold p-4"}>Illustrations</h1>
                         <hr className={"opacity-70"}/>
 
-                        <div className={"flex flex-row w-full"}><img src={image} alt="Illustration"/></div>
+                        <div className={"flex flex-row w-full p-2"}><img src={image} alt="Illustration"/></div>
+
+                        <div className={"flex w-auto text-[#858796]"}><p>Add some quality, svg illustrations to your
+                            project courtesy of <Link className={"text-[#4e73df]"}
+                                                      href={"https://undraw.co/"}>unDraw</Link>, a constantly
+                            updated collection of beautiful svg images that you can use completely free and without
+                            attribution!</p>
+                        </div>
+
+                        <h1 className={"flex w-auto text-[#4e73df] mt-3"}><Link href={"https://undraw.co/"}>Browse
+                            Illustrations on unDraw →</Link></h1>
 
 
                     </div>
 
                 </div>
 
+                {/*    colours*/}
+
+                <div className={"flex flex-row w-full p-4 h-auto"}>
+
+                    <div className={"flex flex-col w-6/12 h-auto m-2 p-2 rounded-lg justify-around"}>
+
+                        <div className={"flex flex-col w-6/12 h-20 bg-[#4e73df] justify-center items-center m-3"}>
+                            <div className={"flex "}><h1>Primary</h1></div>
+                            <br/>
+                            <div className={"flex "}><p>#4e73df</p></div>
+                        </div>
+
+                        <div className={"flex flex-col w-6/12 h-20 bg-[#36b9cc] justify-center items-center m-3"}>
+                            <div className={"flex "}><h1>Info</h1></div>
+                            <br/>
+                            <div className={"flex "}><p>#36b9cc</p></div>
+                        </div>
+
+                        <div className={"flex flex-col w-6/12 h-20 bg-[#e74a3b] justify-center items-center m-3"}>
+                            <div className={"flex "}><h1>Danger</h1></div>
+                            <br/>
+                            <div className={"flex "}><p>#e74a3b</p></div>
+                        </div>
+
+                        <div
+                            className={"flex flex-col w-6/12 h-20 bg-[#f8f9fc] justify-center items-center m-3 shadow-2xl border-e-gray-300"}>
+                            <div className={"flex "}><h1 className={"text-[#5a5c69]"}>Light</h1></div>
+                            <br/>
+                            <div className={"flex "}><p className={"text-[#5a5c69]"}>#f8f9fc</p></div>
+                        </div>
+
+                        <div className={"flex flex-col w-6/12 h-20 bg-[#1cc88a] justify-center items-center m-3"}>
+                            <div className={"flex "}><h1>Success</h1></div>
+                            <br/>
+                            <div className={"flex "}><p>#1cc88a</p></div>
+                        </div>
+
+                        <div className={"flex flex-col w-6/12 h-20 bg-[#f6c23e] justify-center items-center m-3"}>
+                            <div className={"flex "}><h1>Warning</h1></div>
+                            <br/>
+                            <div className={"flex "}><p>#f6c23e</p></div>
+                        </div>
+
+                        <div className={"flex flex-col w-6/12 h-20 bg-[#858796] justify-center items-center m-3"}>
+                            <div className={"flex "}><h1>Secondary</h1></div>
+                            <br/>
+                            <div className={"flex "}><p>#858796</p></div>
+                        </div>
+
+                        <div className={"flex flex-col w-6/12 h-20 bg-[#5a5c69] justify-center items-center m-3"}>
+                            <div className={"flex "}><h1>Dark</h1></div>
+                            <br/>
+                            <div className={"flex "}><p>#5a5c69</p></div>
+                        </div>
 
 
+                    </div>
 
+                    <div className={"flex flex-col w-6/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+
+                        <h1 className={"text-[#4e73df] font-semibold p-4"}>Development Approach</h1>
+                        <hr className={"opacity-70"}/>
+
+                        <div className={"flex w-auto text-[#858796]"}><p>SB Admin 2 makes extensive use of Bootstrap 4
+                            utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes
+                            are used to create custom components and custom utility classes.</p>
+                        </div>
+
+                        <h1 className={"flex w-auto text-[#858796] mt-3"}>Before working with this theme, you should
+                            become familiar with the Bootstrap framework, especially the utility classes.</h1>
+
+
+                    </div>
+
+                </div>
+
+                <footer>
+                    <p className={"flex w-full text-[#858796] h-20 justify-center items-center"}>Copyright © Your Website 2021</p>
+                </footer>
 
             </div>
             {/*    middle end*/}
-
 
         </div>
     );

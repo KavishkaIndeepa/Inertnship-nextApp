@@ -32,7 +32,8 @@ import {
 import Chart from "react-apexcharts";
 import {Square3Stack3DIcon} from "@heroicons/react/24/outline";
 import Link from "next/link";
-import VulnChart from "@/app/pieChart/piChart";
+import PieChart1 from "@/app/pieChart/piChart";
+
 
 //inline
 const chartConfig = {
@@ -469,7 +470,8 @@ export default function Page() {
                         {/*    </CardBody>*/}
                         {/*</Card>*/}
 
-                        {/*<VulnChart/>*/}
+                        <PieChart1/>
+
 
                     </div>
 

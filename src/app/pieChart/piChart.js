@@ -1,8 +1,8 @@
 'use client'
-import {Doughnut} from "react-chartjs-2";
+import { Doughnut} from "react-chartjs-2";
+import Chart from "chart.js/auto";
 
-
-const VulnChart = () => {
+const PieChart1 = () => {
     return (
         <div>
             <Doughnut
@@ -10,14 +10,13 @@ const VulnChart = () => {
 
                     datasets: [
                         {
-                            data: [55, 30, 15],
+                            label: "# of vulnerabilities",
+                            data: [55,30,15],
                             backgroundColor: ["#4e73df", "#1cc88a", "#36b9cc"],
                             borderColor: "white",
-                            borderWidth: 2,
-
+                            borderWidth: 5
                         },
-
-                    ] ,
+                    ],
                     labels: [
                         "Direct",
                         "Social",
@@ -34,4 +33,4 @@ const VulnChart = () => {
     );
 };
 
-export default VulnChart;
+export default PieChart1;

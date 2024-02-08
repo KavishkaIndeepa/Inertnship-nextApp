@@ -20,7 +20,7 @@ import {FaDownload} from "react-icons/fa";
 import {IoIosArrowDropleftCircle} from "react-icons/io";
 import {BsThreeDotsVertical} from "react-icons/bs";
 
-import image from "../img/undraw_posting_photo.svg"
+import Image from 'next/image'
 
 
 import {
@@ -32,6 +32,7 @@ import {
 import Chart from "react-apexcharts";
 import {Square3Stack3DIcon} from "@heroicons/react/24/outline";
 import Link from "next/link";
+import VulnChart from "@/app/pieChart/piChart";
 
 //inline
 const chartConfig = {
@@ -468,6 +469,8 @@ export default function Page() {
                         {/*    </CardBody>*/}
                         {/*</Card>*/}
 
+                        {/*<VulnChart/>*/}
+
                     </div>
 
                 </div>
@@ -592,7 +595,12 @@ export default function Page() {
                         <h1 className={"text-[#4e73df] font-semibold p-4"}>Illustrations</h1>
                         <hr className={"opacity-70"}/>
 
-                        <div className={"flex flex-row w-full p-2"}><img src={image} alt="Illustration"/></div>
+                        <div className={"flex flex-row w-full"}> <Image
+                            src="/undraw_posting_photo.svg"
+                            width={500}
+                            height={500}
+                            alt="Picture of the author"
+                        /></div>
 
                         <div className={"flex w-auto text-[#858796]"}><p>Add some quality, svg illustrations to your
                             project courtesy of <Link className={"text-[#4e73df]"}

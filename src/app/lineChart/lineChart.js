@@ -1,16 +1,15 @@
 'use client'
 import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
-import PieChart1 from "../pieChart/piChart";
 
-export default function App() {
+export default function LineChart1() {
     const canvasEl = useRef(null);
 
     const colors = {
         purple: {
-            default: "rgb(76,139,233)",
-            half: "rgba(149, 76, 233, 0.5)",
-            quarter: "rgba(149, 76, 233, 0.25)",
+            default: "rgb(76,97,233)",
+            half: "rgba(76,84,233,0.5)",
+            quarter: "rgba(76,84,233,0.25)",
             zero: "rgba(149, 76, 233, 0)"
         },
         indigo: {
@@ -23,32 +22,36 @@ export default function App() {
         const ctx = canvasEl.current.getContext("2d");
         // const ctx = document.getElementById("myChart");
 
-        const gradient = ctx.createLinearGradient(0, 16, 0, 600);
+        const gradient = ctx.createLinearGradient(0, 160, 200, 40000,);
         gradient.addColorStop(0, colors.purple.half);
-        gradient.addColorStop(0.65, colors.purple.quarter);
-        gradient.addColorStop(1, colors.purple.zero);
+        gradient.addColorStop(0.60, colors.purple.quarter);
+        gradient.addColorStop(0.5, colors.purple.zero);
 
-        const Earning = [10000,20000,30000,40000];
+        const weight = [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000];
 
         const labels = [
             "Jan",
+            "Feb",
             "Mar",
+            "Apr",
             "May",
+            "Jun",
             "Jul",
+            "Aug",
             "Sep",
-            "Nov"
+            "Oct",
+            "Nov",
+            "Dec"
         ];
         const data = {
             labels: labels,
             datasets: [
                 {
-                    backgroundColor: gradient,
-                    data: Earning,
-                    fill: true,
+                    data: weight,
+                    fill: false,
                     borderWidth: 2,
                     borderColor: colors.purple.default,
-                    lineTension: 0.2,
-                    pointBackgroundColor: colors.purple.default,
+                    lineTension: 0.9,
                     pointRadius: 3
                 }
             ]
